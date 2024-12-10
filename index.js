@@ -164,3 +164,28 @@
 // let array = [45, 22, 41];
 // const result = SecondMinimum(array)
 // console.log(result)
+
+// let arr = {
+//   name:  "aashif",
+//     key: 34,
+//    name1: "arshad"}
+// let arr1 = JSON.stringify(arr)
+// console.log(arr1)
+
+// let arr = [0, false, "Aashif", 34, true, -1,null,undefined ,""]
+// let arr=[0,1,2,3,4,5]
+// let falsy=arr.filter((item)=>item)
+// console.log(falsy)
+
+// let arr = [0, false, "Aashif", 34, true, -1, null, undefined, ""]
+// let truthy = [];
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i]) {
+//         truthy.push(arr[i])
+//     }
+// }
+// console.log(truthy)
+
+
+
+
