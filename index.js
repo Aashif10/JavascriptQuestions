@@ -260,4 +260,76 @@
 //  Str("nitin")
 // ******************************* Fibbonacci Series **************************************
 
+// function Fibbonacci(first, second, n) {
+//     let series = [first, second]
 
+//     for (let i = 2; i < n; i++){
+//         let third = first + second;
+//         series.push(third)
+//         first = second;
+//         second = third;
+//     }
+//     return series;
+
+// }
+// console.log(Fibbonacci(0, 1, 5));
+
+// function Fibbonacci(first, second, length) {
+//     let fib = [0, 1];
+//     for (let i = 2; i< length; i++){
+//         fib.push(fib[i-1]+fib[i-2])
+//     }
+//     return fib;
+// }
+// console.log(Fibbonacci(0,1,6))
+
+// ************************************ Factorial Number  *********************************************
+
+// function Factorial(num) {
+//     let fact = 1;
+//     for (let i = 1; i <= num; i++) {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+// console.log(Factorial(5))
+
+// ***************************************** vowel and consonant  **************************************
+
+// let name = "aashif";
+// let vowel = "aeiouAEIOU";
+// let vowelcount = 0;
+// let consonentcount = 0;
+
+// for (let char of name) {
+//     if (vowel.includes(char)) {
+//         vowelcount++;
+//     } else {
+//         consonentcount++
+//     }
+// }
+// console.log("Vowels:", vowelcount)
+// console.log("Consonant:",consonentcount)
+
+// *************************************** vowel and consonants  *************************************************
+
+// function Check(name) {
+//     let vowels = "aeiouAEIOU"
+//     let vowelcount = {};
+//     let consonantcount = {}
+    
+//     for (let char of name) {
+//         if (vowels.includes(char)) {
+//             vowelcount[char] = vowelcount[char] ? vowelcount[char] + 1 : 1;
+//         }
+//         else {
+//             consonantcount[char] = consonantcount[char] ? consonantcount[char] + 1 : 1;
+//         }
+//     }
+//     return {vowelcount,consonantcount}
+// }
+
+// let name = "aeiougfg"
+// let result = Check(name);
+// console.log("vowelcount:",result.vowelcount);
+// console.log("consonantcount:",result.consonantcount)
