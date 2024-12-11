@@ -230,18 +230,34 @@
 // console.log("Reversed:",Reserved);
 
 // **************************** Palindrome Number ************************
-function Palindrome(digit) {
-  let temp = digit;
-  let sum = 0;
-  while (digit > 0) {
-    let remain = digit % 10;
-    sum = sum * 10 + remain;
-    digit = Math.floor(digit / 10);
-  }
-  if (temp == sum) {
-    console.log("Number is palindrome");
-  } else {
-    console.log("Number is not palindrome");
-  }
-}
-Palindrome(12321);
+// function Palindrome(digit) {
+//   let temp = digit;
+//   let sum = 0;
+//   while (digit > 0) {
+//     let remain = digit % 10;
+//     sum = sum * 10 + remain;
+//     digit = Math.floor(digit / 10);
+//   }
+//   if (temp == sum) {
+//     console.log("Number is palindrome");
+//   } else {
+//     console.log("Number is not palindrome");
+//   }
+// }
+// Palindrome(12321);
+// **************************** String Number ************************
+// function Str(str) {
+//     let original = "";
+//     for (let i = str.length-1; i >= 0; i--){
+//         original += str[i];
+//     }
+//     if (str == original) {
+//       console.log("String is Palindrome");
+//     } else {
+//       console.log("String is not Palindrome");
+//     }
+// }
+//  Str("nitin")
+// ******************************* Fibbonacci Series **************************************
+
+
