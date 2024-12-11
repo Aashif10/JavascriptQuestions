@@ -25,17 +25,16 @@
 //     }
 //      return count;
 // }
-// ******************************* Occuring char **************************************
-
 // const result = TargetChar("aabbbbccaa", "c")
 // console.log(result)
+
+// ******************************* Occuring char **************************************
 
 // function Occured(str) {
 //     let count = {};
 
 //     for (let char of str) {
 //         count[char]=count[char]?count[char]+1:1;
-
 //     }
 //     return count;
 // }
@@ -164,6 +163,7 @@
 // let array = [45, 22, 41];
 // const result = SecondMinimum(array)
 // console.log(result)
+// *******************************  **************************************
 
 // let arr = {
 //   name:  "aashif",
@@ -171,11 +171,13 @@
 //    name1: "arshad"}
 // let arr1 = JSON.stringify(arr)
 // console.log(arr1)
+// *******************************  **************************************
 
 // let arr = [0, false, "Aashif", 34, true, -1,null,undefined ,""]
 // let arr=[0,1,2,3,4,5]
 // let falsy=arr.filter((item)=>item)
 // console.log(falsy)
+// *******************************  **************************************
 
 // let arr = [0, false, "Aashif", 34, true, -1, null, undefined, ""]
 // let truthy = [];
@@ -186,6 +188,60 @@
 // }
 // console.log(truthy)
 
+// ******************************* duplicate Remove **************************************
 
+// let arr1 = [1, 2, 3,23,3,3,4,44, 1];
+// let arr2 = [];
+// for (let i = 0; i < arr1.length; i++) {
+//   if (arr2.includes(arr1[i]) === false) {
+//     arr2.push(arr1[i]);
+//   }
+// }
+// console.log(arr2);
 
+// ******************************* bubble sort **************************************
+// function Bubble(arr) {
+//     let n = arr.length;
+//     for (let i = 0; i < n- 1; i++){
+//         for (j = 0; j <n - i - 1; j++){
+//             if (arr[j] > arr[j + 1]) {
+//                let temp = arr[j]
+//                 arr[j] = arr[j + 1]
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+// let arr = [4, 3, 2, 7, 9, 1, 5, 8, 6];
+// let sorted = Bubble(arr);
+// console.log("Sorted Array:",sorted)
+// ******************************* Reverse String **************************************
 
+// function Reversed(str) {
+//     let Reserve = "";
+//     for (let i = str.length-1; i >= 0; i--){
+//         Reserve += str[i];
+//     }
+//     return Reserve;
+// }
+// let str = "Hello World";
+// let Reserved = Reversed(str);
+// console.log("Reversed:",Reserved);
+
+// **************************** Palindrome Number ************************
+function Palindrome(digit) {
+  let temp = digit;
+  let sum = 0;
+  while (digit > 0) {
+    let remain = digit % 10;
+    sum = sum * 10 + remain;
+    digit = Math.floor(digit / 10);
+  }
+  if (temp == sum) {
+    console.log("Number is palindrome");
+  } else {
+    console.log("Number is not palindrome");
+  }
+}
+Palindrome(12321);
