@@ -317,7 +317,7 @@
 //     let vowels = "aeiouAEIOU"
 //     let vowelcount = {};
 //     let consonantcount = {}
-    
+
 //     for (let char of name) {
 //         if (vowels.includes(char)) {
 //             vowelcount[char] = vowelcount[char] ? vowelcount[char] + 1 : 1;
@@ -329,7 +329,68 @@
 //     return {vowelcount,consonantcount}
 // }
 
-// let name = "aeiougfg"
+// let name = "aeiougfgtbn"
 // let result = Check(name);
-// console.log("vowelcount:",result.vowelcount);
-// console.log("consonantcount:",result.consonantcount)
+// console.log(result.vowelcount);
+// console.log(result.consonantcount)
+// ******************************** Merge Two Array and duplicate *********************
+// let array1 = [1, 2, 3,2,3,4];
+// let array2 = [3,3,4,5,5,4,2];
+// let array3 = [];
+
+// for (let i = 0; i < array1.length; i++) {
+//   if (array3.includes(array1[i]) === false) {
+//     array3.push(array1[i]);
+//   }
+// }
+// for (let j = 0; j < array2.length; j++) {
+//   if (array3.includes(array2[j]) === false) {
+//     array3.push(array2[j]);
+//   }
+// }
+// array3.sort((a, b) => a - b);
+
+// console.log("Merge||Sorted||DuplicateRemove:",array3);
+
+// ***********************  Armstrong *****************
+
+// function Armstrong(num) {
+//   let temp = num;
+//   let Arm = 0;
+//   while (num > 0) {
+//     let remain = num % 10;
+//     Arm = Arm + remain * remain * remain;
+//     num = Math.floor(num / 10)
+//   }
+//   if (temp === Arm) {
+//     console.log("Number is Armstrong:", Arm);
+//   } else {
+//     console.log("Number is not Armstrong:", temp);
+//   }
+// }
+// Armstrong(371);//153 370 371 407
+// *********************************** Sum of digit ***************************
+// function DigitCount(num) {
+//     let count = 0;
+//     while (num > 0) {
+//         let remain = num % 10;
+//         count += remain;
+//         num = Math.floor(num / 10);
+//     }
+//     return count;
+// }
+// console.log(DigitCount(12345))
+// ********************************* count ***********************************
+// function Count(num) {
+//   let count = 0;
+//   while (num > 0) {
+//     num = Math.floor(num / 10);
+//     count++;
+//     }
+//     return count;
+// }
+// console.log(Count(47887559))
+
+// ***********************************
+
+
