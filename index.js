@@ -1,7 +1,7 @@
 // ******************************* Bubble Sort **************************************
 // function BubbleSort(array) {
 //   for (let i = 0; i < array.length - 1; i++) {
-//     for (let j = 0; j < array.length - i - 1; j++) {
+//     for (let j = 0; j <= array.length - i - 1; j++) {
 //       if (array[j] > array[j + 1]) {
 //         let temp = array[j];
 //         array[j] = array[j + 1];
@@ -393,4 +393,82 @@
 
 // ***********************************
 
+// function Swap(a, b) {
+//     a = a + b;
+//     b = a - b;
+//     a = a - b;
+//     return {a,b}
+// }
+// console.log(Swap(10, 20));
 
+// let a = 10, b = 20;
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log("a:", a)
+// console.log("b:", b)
+
+// ************************************ Missing Number in Array **********************************
+
+// let array = [1,4,2];
+// let n = array.length;
+// let sum = 0;
+// let num = n*(n+1) / 2;
+// for (let i = 0; i < array.length-1; i++) {
+//   sum += array[i];
+// }
+// let result = num - sum;
+// console.log(result);
+// ******************************** Find Mising multiple number ***************************
+// let array = [5, 1, 2, 4, 6, 8, 10]
+// let max = 0;
+// for (let j = 0; j < array.length; j++){
+//     if (array[j] > max) {
+//         max = array[j];
+//     }
+// }
+// let misingNum = [];
+// for (let i = 0; i < max; i++){
+//     if (!array.includes(i)) {
+//         misingNum.push(i)
+//     }
+// }
+// console.log(misingNum)
+
+// function Check(name) {
+//     let vowels = "aeiouAEIOU";
+//     let vowelcount = "";
+
+//     for (let i = 0; i < name.length; i++){
+//         if (!vowelcount.includes(name[i])) {
+//             for (let char of vowels) {
+//                 if (name[i] === char) {
+//                     vowelcount += name[i];
+//                 }
+//             }
+//         }
+//     }
+//     return vowelcount;
+// }
+// let name = "arshadeiouiou"
+// let result = Check(name)
+// console.log(result)
+// ************************** Find vowels ***********************
+// function Check(name) {
+//     let vowels = "aeiouAEIOU";
+//     let vowelcount = "";
+
+//     for (let char of name) {
+//         if (vowels.includes(char)) {
+//             if (vowelcount.includes(char)===false) {
+//                 vowelcount += char;
+//             }
+//         }
+//     }
+//     return vowelcount;
+// }
+// let name = "aeiouaeioueqt";
+// let result = Check(name);
+// console.log(result);
+
+ 
