@@ -470,5 +470,16 @@
 // let name = "aeiouaeioueqt";
 // let result = Check(name);
 // console.log(result);
+// ************************** Decimal to binary ***********************
 
- 
+// function Binary(num) {
+//   let binary = "";
+//   while (num > 0) {
+//     binary = num % 2+binary;
+//     num = Math.floor(num / 2);
+//   }
+//   return binary;
+// }
+// let num = 100;
+// let result = Binary(num);
+// console.log(result);
