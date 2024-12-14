@@ -420,7 +420,7 @@
 // let result = num - sum;
 // console.log(result);
 // ******************************** Find Mising multiple number ***************************
-// let array = [5, 1, 2, 4, 6, 8, 10]
+// let array = [5, 1, 2]
 // let max = 0;
 // for (let j = 0; j < array.length; j++){
 //     if (array[j] > max) {
@@ -482,4 +482,115 @@
 // }
 // let num = 100;
 // let result = Binary(num);
+// console.log(result);
+// ************************** Check Perfect Number ***********************
+// function Perfect(num) {
+//   let sum = 0;
+//   for (let i = 1; i <= num / 2; i++) {
+//     if (num % i === 0) {
+//       sum += i;
+//     }
+//   }
+//   if (sum == num) {
+//     console.log("This is perfect number");
+//   } else {
+//     console.log("This is not perfect Number");
+//   }
+//   return num;
+// }
+// let num = 6;
+// let result = Perfect(num);
+// console.log(result);
+// ************************** Check Perfect Number 1 to 100 ***********************
+// function Perfect() {
+//   let perfectNumber = [];
+//   for (let i = 1; i <= 100; i++) {
+//     let sum = 0;
+
+//     for (let j = 1; j <= i / 2; j++) {
+//       if (i % j === 0) {
+//         sum += j;
+//       }
+//     }
+
+//     if (sum === i) {
+//       perfectNumber.push(i);
+//     }
+//   }
+//   return perfectNumber;
+// }
+// console.log(Perfect());
+
+// ************************************ check valid email************************
+// function Valid(email) {
+//   let domains = ["@gmail.com", "@gmail.co"];
+//   for (let i = 0; i < domains.length; i++) {
+//     if (email.includes(domains[i])) {
+//       console.log("This valid email");
+//       break;
+//     } else {
+//       console.log("This is not valid");
+//       break;
+//     }
+//   }
+
+//   return email;
+// }
+// console.log(Valid("aashif@gmail.com"));
+// console.log(Valid("aashif@yahoo.com"));
+// ********************************* Find Most Occuring ***************************************
+// function Occured(str) {
+//   let count = {};
+//   for (let char of str) {
+//     count[char] = count[char] ? count[char] + 1 : 1;
+//   }
+//   let maxchar = "";
+//   let maxcount = 0;
+//   for (let char in count) {
+//     if (count[char] > maxcount) {
+//       maxchar = char;
+//       maxcount = count[char];
+//     }
+//   }
+//   return {maxchar,maxcount}
+// }
+// let str = "javascript is great language"
+// let result = Occured(str);
+// console.log(result)
+
+// ********************************** Most occuring Number **************************
+// function number(num) {
+//   let numstr = num.toString();
+//   let count = {};
+//   for (let i of numstr){
+//     count[i] = count[i] ? count[i] + 1 : 1;
+//   }
+//   let maxcount = 0;
+//   let maxdigit = null;
+//   for (let num in count){
+//     if (count[num] > maxcount) {
+//       maxdigit = num;
+//       maxcount = count[num];
+//        }
+
+//   }
+//   return {maxdigit,maxcount};
+// }
+// let num = 11223322223333;
+// let result = number(num)
+// console.log(result)
+// ******************************************** Reverse string **************
+
+
+// function sorted(arr) {
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] > arr[i + 1]) {
+//             return false;
+//         }
+//     }
+//     return true
+// }
+// // let arr = [1, 4, 2, 6, 5];
+// let arr=[1,2,3,4,5]
+// let result = sorted(arr);
 // console.log(result);
