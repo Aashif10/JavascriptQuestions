@@ -581,7 +581,6 @@
 // console.log(result)
 // ******************************************** Reverse string **************
 
-
 // function sorted(arr) {
 //     for (let i = 0; i < arr.length; i++){
 //         if (arr[i] > arr[i + 1]) {
@@ -594,3 +593,32 @@
 // let arr=[1,2,3,4,5]
 // let result = sorted(arr);
 // console.log(result);
+
+// ************************************ Find the largest SubString *******************
+// function Longest(str) {
+//     let longest = "";
+//     let current = "";
+//     let char = "";
+//     for (let i = 0; i < str.length; i++){
+//         char = str[i];
+//         if (char === " ") {
+//             if (current.length > longest.length) {
+//                 longest = current;
+//             }
+//             current = "";
+//         } else {
+//             current += char;
+//         }
+//     }
+//     return longest;
+// }
+//  let str=" I Love My India "
+// let result = Longest(str);
+// console.log(result);
+
+// let array = [1, 2, 3, 4];
+// array.unshift(100);
+// console.log(array);
+
+let arr=[..."Ashif"];
+console.log(arr);
