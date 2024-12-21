@@ -245,7 +245,7 @@
 //   }
 // }
 // Palindrome(12321);
-// **************************** String Number ************************
+// **************************** Palindrome Number ************************
 // function Str(str) {
 //     let original = "";
 //     for (let i = str.length-1; i >= 0; i--){
@@ -620,5 +620,133 @@
 // array.unshift(100);
 // console.log(array);
 
-let arr=[..."Ashif"];
-console.log(arr);
+// let arr=[..."Ashif"];
+// console.log(arr);
+
+// ************************************* Rotate Array ******************
+// function Rotate(array,time) {
+//     let n = array.length;
+//     let Rotated = []
+//     //  time = time % n;
+//     for (let i = 0; i < n; i++){
+//           Rotated[i]=array[(i+time)%n]
+//     }
+//     return Rotated;
+// }
+// let array = [1, 2, 3, 4, 5];
+// let result = Rotate(array,3);
+// console.log(result)
+
+// ************************************* Rotate Right Array ******************
+// function RotateRight(array, times) {
+//     let Rotated = [];
+//     let n = array.length;
+//     for (let i = 0; i < n; i++){
+//         Rotated[(i+times)%n]=array[i]
+//     }
+//     return Rotated;
+// }
+// let array = [1, 2, 3, 4, 5];
+// let result = RotateRight(array,2)
+// console.log(result)
+
+// ************************************* Rotate Right String ******************
+// function Rotatestring(str, times) {
+//     let Rotated =''
+//     let n = str.length;
+//     for (let i = 0; i < n; i++){
+//         Rotated += str[(i + times) % n];
+//     }
+//     return Rotated
+// }
+// let str = "upkar"
+// let result = Rotatestring(str, 2)
+// console.log(result)
+
+// ******************************** Count Freuency of each element ***********************
+// function Count(number) {
+//     let numstr = number.toString();
+//     let count = {};
+//     for (let i of numstr) {
+//         count[i] = count[i] ? count[i] + 1 : 1;
+
+//     }
+//     return count;
+// }
+// let array = 112222;
+// let result = Count(array);
+// console.log(result)
+// **************************** Rearraging array in decending and accending *****************
+// function sort(array) {
+//     for (let i = 0; i < array.length; i++){
+//         for (let j = 0; j < array.length; j++){
+//             if (array[j] > array[j + 1]) {
+//                 let temp = array[j]
+//                 array[j] = array[j + 1];
+//                 array[j+1]=temp
+//             }
+//         }
+//     }
+//     return array;
+// }
+// let array = [2, 4, 1, 5, 3];
+// let result = sort(array);
+// console.log(result)
+// ************************************* Median of array ***********************
+
+// function Median(array) {
+//   let len = array.length;
+//   let mid = 0;
+
+//   mid = array[Math.floor(len / 2)];
+
+//   return mid;
+// }
+
+// let array = [20, 21,  22, 21, 53, 29, 90, 98, 78];
+// let result = Median(array);
+// console.log(result);
+// **************** Add element in array **********
+// function AddElement(array) {
+//     let Element = [];
+//     for (let i = 0; i < array.length; i++){
+//         Element[i]= array[i]*2;
+//     }
+//     return Element;
+// }
+// let array = [1, 2, 3, 4, 5];
+// let Result = AddElement(array)
+// console.log(Result)
+// **************************************************************************
+
+// function subset(str) {
+//     let char = "len";
+//     if (str.includes(char)) {
+//         return true;
+//     } else {
+//         return false
+//     }
+// }
+// let str = "javascript is great language"
+// let Result = subset(str);
+// console.log(Result)
+
+// *************************** Check Anagram string ***********************
+// function Anagram(str1, str2) {
+//   let count = {};
+//   if (str1.length !== str2.length) {
+//     return false;
+//   }
+//   for (let ch of str1) {
+//     count[ch] = count[ch] ? count[ch] + 1 : 1;
+//   }
+//   for (let char of str2) {
+//     if (!count[char]) {
+//       return false;
+//     }
+//     count[char]--;
+//     }
+//     return true;
+// }
+// let Result = Anagram("listen", "silent");
+// console.log(Result);
