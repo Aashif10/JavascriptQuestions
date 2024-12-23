@@ -751,7 +751,7 @@
 // let Result = Anagram("listen", "silent");
 // console.log(Result);
 
-// ******************************************************************************
+// *********************************** space Remove *******************************************
 // function space(str) {
 //     // let str2=""
 //     let count ="";
@@ -767,4 +767,70 @@
 // let result = space(str)
 // console.log(result)
 
+// ************************************ input from user *************************************
+// const prompt = require("prompt-sync")();
 
+// let first = prompt("Enter first Digit: ");
+// let second = prompt("Enter Second Digit:");
+// let result = Number(first) + Number(second);
+
+// console.log("Output of two digit:", result);
+
+// ************************************ Rotate Array *************************************
+// function RotateArray(array,times) {
+//     let Reversed = [];
+//     let n = array.length;
+//     for(let i = 0; i < array.length; i++) {
+//         Reversed[i]=array[(i+times)%n]
+//     }
+//     return Reversed;
+// }
+// let array = [1, 2, 3, 4, 5, 6, 7];
+// let result = RotateArray(array, 4);
+// console.log(result)
+
+// function Rotate(array, k) {
+//     for (let i = array.length - 1; i > k; i--){
+//         let n = array.pop()
+//         array.unshift(n);
+//     }
+//     return array;
+// }
+// let array = [1, 2, 3, 4, 5, 6,7];
+// let result = Rotate(array, 3)
+// console.log(result)
+
+// ******************************Product of Array Except Self***************
+// function Product(array) {
+//   let product = [];
+//   let value = 1;
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       if (array[i] !== array[j]) {
+//         value = value * array[j];
+//       }
+//     }
+//     product.push(value);
+//     value = 1;
+//   }
+//   return product;
+// }
+// let array = [1, 2, 3, 4,5];
+// let result = Product(array);
+// console.log(result);
+
+// ******************************Product of Array Except Self***************
+// function Product(array) {
+//   let value = 1
+//   let result = []
+//   for (let i = 0; i < array.length; i++) {
+//     value *= array[i]
+//   }
+//   for (let i = 0; i < array.length; i++) {
+//     result.push(value / array[i])
+//   }
+//   return result;
+// }
+// let array = [1, 2, 3, 4]
+// let result = Product(array);
+// console.log(result);
