@@ -750,3 +750,21 @@
 // }
 // let Result = Anagram("listen", "silent");
 // console.log(Result);
+
+// ******************************************************************************
+// function space(str) {
+//     // let str2=""
+//     let count ="";
+//     for (let char of str) {
+//         if (char == " ") {
+//             // str2 += char;
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// let str = "a a s h i f"
+// let result = space(str)
+// console.log(result)
+
+
