@@ -753,15 +753,16 @@
 
 // *********************************** space Remove *******************************************
 // function space(str) {
-//     // let str2=""
-//     let count ="";
+//     let str2=""
+//     // let count ="";
 //     for (let char of str) {
-//         if (char == " ") {
-//             // str2 += char;
-//             count++;
+//         if (char !== " ") {
+//             str2 += char;
+//             // count++;
 //         }
 //     }
-//     return count;
+//     // return count;
+//     return str2;
 // }
 // let str = "a a s h i f"
 // let result = space(str)
@@ -815,7 +816,7 @@
 //   }
 //   return product;
 // }
-// let array = [1, 2, 3, 4,5];
+// let array = [1, 2, 3, 4];
 // let result = Product(array);
 // console.log(result);
 
@@ -834,3 +835,86 @@
 // let array = [1, 2, 3, 4]
 // let result = Product(array);
 // console.log(result);
+// ************************************ find string based on length ****************************
+// function Length(str) {
+//     let array = str.split(" ");
+//     for (let i = 0; i < array.length; i++){
+//         if (array[i].length===5) {
+//             return array[i]
+//         }
+//     }
+//     return "Not Found";
+// }
+// let str = " The function now returns soon as detects a word with length";
+// let result = Length(str);
+// console.log(result);
+// **************************** find length  ************************************
+
+// input = "javascript is great language  "
+// output= find last word length
+
+// function findLength(str) {
+//   let array = str.split(" ");
+//   let len = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === "language") {
+//       return array[i].length;
+//     }
+//   }
+//   return "Not found";
+// }
+// let str = "javascript is great programming language  ";
+// console.log(findLength(str));
+
+// function Delete(array, index) {
+//     let result=[]
+//   if (index < 0 || index > array.length) {
+//     return array;
+//     }
+//     for (let i = 0; i < array.length; i++){
+//         if (i !== index) {
+//             result.push(array[i]);
+//         }
+//     }
+// }
+
+// console.log(typeof(null))
+// console.log(typeof (undefined))
+// console.log(null==undefined)
+// console.log(typeof([]))
+// console.log(1==[1,2])
+
+// ********************************* Delete Element specific Position ************************
+// function specificPosition(array, postion) {
+//     let newArr = [];
+//     if (postion < 0|| postion >= array.length) {
+//        return "Index not Exists"
+//     }
+//      for (let i = 0; i < array.length; i++) {
+//        if (i !== postion) {
+//          newArr.push(array[i]);
+//        }
+//      }
+//     return newArr
+// }
+// let array = [1, 2, 3, 4, 5];
+// let result = specificPosition(array,1);
+// console.log(result);
+
+// ************* Intersection of Array *************
+// function Intersection(array1, array2) {
+//     let newArr=[]
+//     for (let i = 0; i < array1.length; i++) {
+//         for (let j = 0; j < array2.length; j++)
+//         {
+//             if (array1[i] == array2[j]) {
+//                 newArr.push(array1[i])
+//             }
+//         }
+//     }
+//     return newArr
+// }
+// let array1=[1,2,3,5]
+// let array2 = [5,2, 3, 4]
+// let result = Intersection(array1, array2)
+// console.log(result)
