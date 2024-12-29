@@ -865,7 +865,7 @@
 // }
 // let str = "javascript is great programming language  ";
 // console.log(findLength(str));
-
+// *************************** Delete specific element **************
 // function Delete(array, index) {
 //     let result=[]
 //   if (index < 0 || index > array.length) {
@@ -877,7 +877,7 @@
 //         }
 //     }
 // }
-
+// ************************************************************
 // console.log(typeof(null))
 // console.log(typeof (undefined))
 // console.log(null==undefined)
@@ -918,3 +918,101 @@
 // let array2 = [5,2, 3, 4]
 // let result = Intersection(array1, array2)
 // console.log(result)
+// *****************************Shift Zero *****************************
+// function shiftzero(array) {
+//     let result = [];
+//     for (let i = 0; i < array.length; i++){
+//         if (array[i] !== 0) {
+//             result.push(array[i])
+//         }
+//     }
+//     while (result.length < array.length) {
+//         result.push(0)
+//     }
+//     return result;
+// }
+// let array = [0, 1, 0, 2, 3, 0];
+// let result = shiftzero(array);
+// console.log(result);
+// ********************** maximum Product of two element ***********************
+// function MaxProduct(array) {
+//     let MaxProduct = 1;
+
+//     for (let i = 0; i < array.length; i++){
+//         for (let j = i+1; j < array.length; j++){
+//             let product = array[i] * array[j]
+//             if (product > MaxProduct) {
+//                 MaxProduct = product;
+//             }
+//         }
+//     }
+//     return MaxProduct;
+// }
+// let array = [1,5,7,9,3, 6];
+// let result = MaxProduct(array);
+// console.log(result);
+// ********************** manimum Product of two element ***********************
+// function MinProduct(array) {
+//     let MinProduct = Infinity;
+
+//     for (let i = 0; i < array.length; i++){
+//         for (let j = i+1; j < array.length; j++){
+//             let product = array[i] * array[j]
+//             if (product < MinProduct) {
+//                 MinProduct = product;
+//             }
+//         }
+//     }
+//     return MinProduct;
+// }
+// let array = [1,5,7,9,3, 6];
+// let result = MinProduct(array);
+// console.log(result);
+
+// ********************** maximum two of two element ***********************
+// function MaxSum(array) {
+//     let sum = 0;
+//     let maxsum = 0;
+//     for (let i = 0; i < array.length; i++){
+//         for (let j = i + 1; j < array.length; j++){
+//             sum = array[i] + array[j];
+//             if (sum > maxsum) {
+//                 maxsum = sum;
+//             }
+//         }
+//     }
+//     return maxsum
+// }
+// let array = [2, 4, 1, 6, 8, 3, 6, 2, 9];
+// let result = MaxSum(array);
+// console.log(result)
+
+// ******************* maximum Product of three element ***************
+// function MaxProduct(array) {
+// let sum = 0;
+//     let max1 = -Infinity, max2 = -Infinity, max3 = -Infinity;
+//     let product = 1;
+//     for (let element of array) {
+//         if (element > max1) {
+//             max3 = max2;
+//             max2 = max1;
+//             max1 = element;
+//         }
+//         else if (element > max2) {
+//             max3 = max2;
+//             max2 = element;
+//         }
+//         else if (element > max3) {
+//             max3 = element;
+//         }
+//     }
+//     // product = max1 * max2 * max3;
+//     sum = max1 + max2 + max3;
+       
+//     // return {product,max1,max2,max3}
+//     return sum;
+    
+// }
+// let array = [1, 9, 5, 8, 2, 4, 3, 12, 32];
+// let result = MaxProduct(array);
+// console.log("Sum of max three number:",result)
